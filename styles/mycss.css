@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+   --col-gold500: hsl(31, 77%, 52%);
+   --col-cyan800: hsl(184, 100%, 22%);
+   --col-green950: hsl(179, 100%, 13%);
+   --col-trwhite: hsla(0, 0%, 100%, 0.75);
+   --col-gray100: hsl(0, 0%, 95%);
+}
+
+* {
+   margin: 0px;
+   padding: 0px;
+   text-decoration: none;
+}
+
+body {
+   font-size: 15px;
+   font-family: "Lexend Deca", sans-serif;
+   background-color: var(--col-gray100);
+   color: var(--col-trwhite);
+   display: block;
+}
+
+.container {
+   padding:20px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+}
+
+.sedans {
+   background-color: var(--col-gold500);
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+}
+
+.suvs {
+   background-color: var(--col-cyan800);
+}
+
+.luxury {
+   background-color: var(--col-green950);
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+
+.wpx {
+   width: 210px;
+   height: 380px;
+   padding: 40px;
+}
+
+h1 {
+   font-family: "Big Shoulders Display", sans-serif;
+   padding: 20px 0px;
+}
+
+.text {
+   line-height: 1.5;
+   display: flex;
+   flex-direction: row;
+   height: 230px;
+}
+
+.button {
+   background-color: var(--col-gray100);
+   border: 0px;
+   padding: 13px 26px;
+   border-radius: 25px;
+}
+
+.b1 {
+   color: var(--col-gold500);
+}
+
+.b2 {
+   color: var(--col-cyan800);
+}
+
+.b3 {
+   color: var(--col-green950);
+}
+
+   .button:hover {
+      color: var(--col-gray100);
+   }
+
+   .b1:hover {
+      background-color: var(--col-green950);
+   }
+
+   .b2:hover {
+      background-color: var(--col-gold500);
+   }
+
+   .b3:hover {
+      background-color: var(--col-gold500);
+   }
+
+.attribution { 
+   font-size: 11px; 
+   text-align: center; 
+   color: var(--col-gold500);
+}
+    
+.attribution a { 
+   color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 376px) {
+   .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+   }
+
+   .sedans {
+      border-bottom-left-radius: 0px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+   }
+
+   .luxury {
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+   }
+
+   .text {
+      padding-bottom: 10px;
+      height: 140px;
+   }
+
+   .wpx {
+      height: 300px;
+   }
+}
